@@ -132,7 +132,7 @@ a {
   word-wrap: break-word;
 }
 #overview p {
-  max-width: 500px;
+  max-width: 700px;
   margin-bottom: 20px;
   word-wrap: break-word;
 }
@@ -160,7 +160,7 @@ a {
   }
 }
 
-#specs {
+#specs{
   margin-top: 0px;
   margin-bottom: 30px;
   padding-top: 20px;
@@ -168,7 +168,7 @@ a {
   justify-content: center;
   background: #eee;
 }
-#specs h1 {
+#specs h1, #services-header h1, #pricing-header h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,12 +222,37 @@ iframe {
   width: 100%;
 }
 
-#pricing {
+
+#pricing, #services {
   margin-top: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
+#services #gb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 3px solid #777;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px 1px #888888;
+  
+}
+
+#services #gb .icon {
+  margin: 15px;
+  color: rgb(131, 176, 218);
+}
+
+#pricing, #pricing-header {
+  
+  background: #eee;
+}
+
 #pricing #gb {
   display: flex;
   flex-direction: column;
@@ -239,7 +264,7 @@ iframe {
   border-radius: 10px;
   box-shadow: 5px 5px 8px 1px #888888;
 }
-#pricing #gb .title {
+#pricing #gb .title, #services #gb .title{
   background-color: #ddd;
   color: black;
   padding: 15px 0;
@@ -247,31 +272,32 @@ iframe {
   text-transform: uppercase;
   font-weight: 700;
 }
-#pricing #gb h2 {
+#pricing #gb h2, #services #gb h2 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-#pricing #gb ol {
-  margin: 15px 0;
+#pricing #gb ol, #services #gb ol {
+  margin: 15px 15px;
+  text-align: left;
 }
-#pricing #gb ol li {
+#pricing #gb ol li, #services #gb ol li {
   padding: 5px 0;
 }
-#pricing #gb button {
+#pricing #gb button, #services #gb button {
   border: 0;
   margin: 15px 0;
   background-color: #5DA0DF;
   font-weight: 400;
 }
-#pricing #gb button:hover {
+#pricing #gb button:hover, #services #gb button:hover {
   background-color: orange;
   transition: background-color 1s;
 }
 @media (max-width: 800px) {
-  #pricing {
+  #pricing, #services {
     flex-direction: column;
   }
-  #pricing #gb {
+  #pricing #gb, #services #gb {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
