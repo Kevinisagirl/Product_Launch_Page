@@ -1273,27 +1273,27 @@ section {
   background-color: white;
 }
 
-.faq .faq-list {
+.faq .news-list {
   padding: 0 100px;
 }
 
-.faq .faq-list ul {
+.faq .news-list ul {
   padding: 0;
   list-style: none;
 }
 
-.faq .faq-list li + li {
+.faq .news-list li + li {
   margin-top: 15px;
 }
 
-.faq .faq-list li {
+.faq .news-list li {
   padding: 20px;
   background: #f8f9fa;
   border-radius: 4px;
   position: relative;
 }
 
-.faq .faq-list a {
+.faq .news-list a {
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -1305,49 +1305,49 @@ section {
   cursor: pointer;
 }
 
-.faq .faq-list .icon-help {
+.faq .news-list .icon-help {
   font-size: 24px;
   position: absolute;
   right: 0;
-  left: 20px;
+  left: 15px;
   color: #47b2e4;
 }
 
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+.faq .news-list .icon-show, .faq .news-list .icon-close {
   font-size: 24px;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.faq .faq-list p {
+.faq .news-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
 
-.faq .faq-list .icon-show {
+.faq .news-list .icon-show {
   display: none;
 }
 
-.faq .faq-list a.collapsed {
+.faq .news-list a.collapsed {
   color: #37517e;
   transition: 0.3s;
 }
 
-.faq .faq-list a.collapsed:hover {
+.faq .news-list a.collapsed:hover {
   color: #47b2e4;
 }
 
-.faq .faq-list a.collapsed .icon-show {
+.faq .news-list a.collapsed .icon-show {
   display: inline-block;
 }
 
-.faq .faq-list a.collapsed .icon-close {
+.faq .news-list a.collapsed .icon-close {
   display: none;
 }
 
 @media (max-width: 1200px) {
-  .faq .faq-list {
+  .faq .news-list {
     padding: 0;
   }
 }
